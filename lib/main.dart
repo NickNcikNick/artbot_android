@@ -270,8 +270,8 @@ class _MyHomePageState extends State<MyHomePage> {
                   Expanded(
                     child: DrawingBoard(
                       background: Container(
-                        width: 400,
-                        height: 400,
+                        width: MediaQuery.of(context).size.width,
+                        height: MediaQuery.of(context).size.height,
                         color: Colors.white,
                       ),
                       showDefaultActions: true, /// Enables default toolbar actions
