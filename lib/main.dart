@@ -5,7 +5,7 @@ import 'package:image_picker/image_picker.dart';
 import 'package:file_picker/file_picker.dart';
 import 'package:ionicons/ionicons.dart';
 import 'package:flutter_joystick/flutter_joystick.dart';
-import 'package:flutter_drawing_board/flutter_drawing_board.dart';
+//import 'package:flutter_drawing_board/flutter_drawing_board.dart';
 import 'websocket_manager.dart';
 import 'file_uploader.dart';
 import 'pre_processing.dart';
@@ -256,8 +256,8 @@ class _MyHomePageState extends State<MyHomePage> {
         Card(), //Camera(Blank)
         Card(), //Files(Blank)
         Card(), //Interactive(Blank)
-        //Card(), //Interactive(Blank)
-        Card(
+        Card(), //Interactive(Blank)
+        /*Card(
           shadowColor: Colors.transparent,
           margin: const EdgeInsets.all(8.0),
           color: Colors.white,
@@ -270,8 +270,8 @@ class _MyHomePageState extends State<MyHomePage> {
                   Expanded(
                     child: DrawingBoard(
                       background: Container(
-                        width: MediaQuery.of(context).size.width,
-                        height: MediaQuery.of(context).size.height,
+                        width: 400,
+                        height: 400,
                         color: Colors.white,
                       ),
                       showDefaultActions: true, /// Enables default toolbar actions
@@ -282,7 +282,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
           ),
-        ), //Websocket
+        ), //Websocket*/
         Card(
           shadowColor: Colors.transparent,
           margin: const EdgeInsets.all(8.0),
